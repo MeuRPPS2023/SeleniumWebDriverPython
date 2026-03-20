@@ -40,11 +40,12 @@ assert buttonLogin.is_enabled(), "Diferente!"
 
 assert relembrar.is_displayed(), "Diferente!"
 assert relembrar.is_enabled(), "Diferente!"
+assert not relembrar.is_selected(), "Diferente!"
 relembrar.click()
 assert relembrar.is_selected(), "Diferente!"
 
 # Tempo de espera
-time.sleep(5)
+time.sleep(3)
 
 # Fechar browser
-browser.quit()         # ← executa automaticamente ao final de cada teste
+browser.quit() # ← executa automaticamente ao final de cada teste
